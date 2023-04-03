@@ -1,0 +1,181 @@
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+      header{
+      width:100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      padding:30px 10px;
+      background: linear-gradient(#25252A,black);
+      opacity: 81%
+      }
+
+    .logo p{
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+    }
+    .logo{
+      
+        margin:0px 125px;
+        font-size: 38px;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-weight:lighter;
+        letter-spacing:2.9px;
+        cursor:pointer;
+        color: white;
+        
+    }
+    nav li{
+      display:inline-block;
+      list-style:none;
+      padding: 0px 23px;
+    }
+    a{
+      text-decoration: none;
+      font-size: 23px;
+      font-weight: 450px;
+      color:white;
+      cursor:pointer;
+      font-family: "Roboto", sans-serif;
+    }
+.content-items{
+  background-image:url('./res.jpg');
+  
+  background-repeat: no-repeat;
+  width:100%;
+  height:100vh;
+  margin:0%;
+  padding:0%;
+  background-size:cover;
+  
+  
+}
+div h1{
+    @import font-family;
+  margin:0% 33%;
+  color:darkcyan;
+  padding:30px;
+  letter-spacing: 2.6px;
+  font-size: 100px;
+  font-family: font-family: "Roboto", sans-serif;
+}
+h2{
+    margin: 3% 35%;
+    font-size: 100px;
+    color:darkgoldenrod;
+}
+button{
+    
+    margin: 6% 40%;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+   background-color:transparent;
+    color: #1f0a5c;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    border-color: white;
+    font-family: 'aboreto',cursive;
+   
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#360884);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#450a7b);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#010707);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+  
+
+

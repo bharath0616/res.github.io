@@ -1,0 +1,162 @@
+*{
+  background-color:floralwhite;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+
+  
+
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    font-size: 25px;
+  }
+ 
+  
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+
+  
+    input[type=text] {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 18px;
+    }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 20px;
+    border: none;
+    width: 11%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 1900px;
+  }
+  .btn:hover {
+    background-color: #45a049;
+  }
+  .navigate{
+    padding:30px;
+  }
+a{
+    display:inline-block;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin:0px 20px;
+    border: none;
+    width: 4%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 25px;
+    text-decoration:none;
+    
+}
+a:hover {
+    background-color:red;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 377px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-50{
+        font-size: 14px;
+        flex:30%;
+    }
+    .navigate{
+        padding: 16 px;
+      }
+    a{
+        padding:10px;
+        font-size: 12px;
+        width:2.2%;
+  }
+  input[type=text] {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 10px;
+}
+.btn {
+    padding:10px;
+    font-size: 12px;
+    width:6.2%;
+    margin:0px 620px;
+  }
+  }
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-50{
+        font-size: 14px;
+        flex:30%;
+    }
+    .navigate{
+        padding: 16 px;
+      }
+    a{
+        padding:10px;
+        font-size: 12px;
+        width:2.2%;
+  }
+  input[type=text] {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 10px;
+}
+.btn {
+    padding:10px;
+    font-size: 12px;
+    width:6.2%;
+    margin:0px 200px;
+  }
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+    font-size: 9px;
+  }
+}

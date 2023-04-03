@@ -1,0 +1,3 @@
+https://www.geeksforgeeks.org/using-github-to-host-a-free-static-website/
+
+to  add new files: https://stackoverflow.com/questions/51554566/pushing-a-new-file-to-an-existing-git-repository
